@@ -1,5 +1,5 @@
 {
-  name: `Netatmo`,
+  name: `Kasa TP-Link`,
   description: `Add Kasa TP-Link plugs and blubs to your HomeKit network using HomeBridge`,
   image: `registry.minkebox.net/minkebox/homebridge_tplink`,
   tags: [ 'HomeKit' ],
