@@ -19,7 +19,7 @@
     },
     {
       type: `Text`,
-      text: `The Kasa TP-Link devices on your HomeKit network will found automatically.`
+      text: `The Kasa TP-Link devices on your HomeKit network will be found automatically.`
     }
   ],
   properties: [
