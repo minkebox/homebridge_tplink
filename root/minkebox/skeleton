@@ -1,6 +1,6 @@
 {
   name: `Kasa TP-Link`,
-  description: `Add Kasa TP-Link plugs and blubs to your HomeKit network using HomeBridge`,
+  description: `Add Kasa TP-Link bulbs and plugs to your HomeKit network using HomeBridge`,
   image: `registry.minkebox.net/minkebox/homebridge_tplink`,
   tags: [ 'HomeKit' ],
   actions: [
