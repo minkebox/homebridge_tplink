@@ -1,6 +1,6 @@
 {
   name: `Netatmo`,
-  description: `Add TPLink plugs and blubs to your HomeKit network using HomeBridge`,
+  description: `Add Kasa TP-Link plugs and blubs to your HomeKit network using HomeBridge`,
   image: `registry.minkebox.net/minkebox/homebridge_tplink`,
   tags: [ 'HomeKit' ],
   actions: [
@@ -15,11 +15,11 @@
     },
     {
       type: `Header`,
-      title: `Configure Netatmo`
+      title: `Configure Kasa TP-Link`
     },
     {
       type: `Text`,
-      text: `The TPLink devices on the HomeKit network will found automatically.`
+      text: `The Kasa TP-Link devices on your HomeKit network will found automatically.`
     }
   ],
   properties: [
