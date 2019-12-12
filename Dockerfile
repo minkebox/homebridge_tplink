@@ -1,4 +1,4 @@
-FROM registry.minkebox.net/minkebox/homebridge_base
+FROM registry.gitlab.com/minkebox/homebridge_base
 
 COPY root/ /
 
