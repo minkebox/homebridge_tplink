@@ -89,6 +89,10 @@
       name: `BRIDGE_PIN`
     },
     {
+      type: `Environment`,
+      name: `BRIDGE_SETUPID`
+    },
+    {
       type: `Directory`,
       name: `/app/homebridge`,
       style: 'store'
