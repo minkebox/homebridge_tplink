@@ -3,6 +3,9 @@ const { callbackifyLogError, getOrAddCharacteristic } = require('./utils');
 
 const { HomeKitDevice } = require('./homekit-device');
 
+const Queue = require('promise-queue');
+const mainQ = new Queue(1, Infinity);
+
 class TplinkAccessory {
   constructor(
     platform,
@@ -189,7 +192,7 @@ class TplinkAccessory {
         c.on(
           'get',
           this.callbackify(() => {
-            return this.hkDevice.getCharacteristicValue(characteristic);
+            return mainQ.add(() => this.hkDevice.getCharacteristicValue(characteristic));
           })
         );
 
@@ -197,10 +200,10 @@ class TplinkAccessory {
           c.on(
             'set',
             this.callbackify((value) => {
-              return this.hkDevice.setCharacteristicValue(
+              return mainQ.add(() => this.hkDevice.setCharacteristicValue(
                 characteristic,
                 value
-              );
+              ));
             })
           );
         }
