@@ -13,7 +13,8 @@
     {
       "platform": "TplinkSmarthome",
       "name": "TplinkSmarthome",
-      "pollingInterval": 60
+      "pollingInterval": 60,
+      "timeout": 5
     }
   ]
 }
