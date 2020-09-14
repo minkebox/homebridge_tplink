@@ -12,7 +12,8 @@
   "platforms": [
     {
       "platform": "TplinkSmarthome",
-      "name": "TplinkSmarthome"
+      "name": "TplinkSmarthome",
+      "pollingInterval": 60
     }
   ]
 }
